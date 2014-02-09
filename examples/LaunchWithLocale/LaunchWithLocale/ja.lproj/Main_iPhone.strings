@@ -1,0 +1,12 @@
+
+/* Class = "IBUILabel"; text = "Base Interface"; ObjectID = "PeH-J0-HFk"; */
+"PeH-J0-HFk.text" = "日本語インタフェース";
+
+/* Class = "IBUISegmentedControl"; lpd-r3-3IA.segmentTitles[0] = "Base"; ObjectID = "lpd-r3-3IA"; */
+"lpd-r3-3IA.segmentTitles[0]" = "日本語";
+
+/* Class = "IBUISegmentedControl"; lpd-r3-3IA.segmentTitles[1] = "English"; ObjectID = "lpd-r3-3IA"; */
+"lpd-r3-3IA.segmentTitles[1]" = "英語";
+
+/* Class = "IBUISegmentedControl"; lpd-r3-3IA.segmentTitles[2] = "正體中文"; ObjectID = "lpd-r3-3IA"; */
+"lpd-r3-3IA.segmentTitles[2]" = "繁体字中国語";

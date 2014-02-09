@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "Language"; ObjectID = "QaV-S7-iYO"; */
+"QaV-S7-iYO.text" = "Engilish";
+
+/* Class = "IBUILabel"; text = "Current Language："; ObjectID = "fMc-d9-Jw6"; */
+"fMc-d9-Jw6.text" = "Current Language：";
+
+/* Class = "IBUISegmentedControl"; rqr-Z1-2h2.segmentTitles[0] = "First"; ObjectID = "rqr-Z1-2h2"; */
+"rqr-Z1-2h2.segmentTitles[0]" = "Japanese";
+
+/* Class = "IBUISegmentedControl"; rqr-Z1-2h2.segmentTitles[1] = "Second"; ObjectID = "rqr-Z1-2h2"; */
+"rqr-Z1-2h2.segmentTitles[1]" = "English";
+
+/* Class = "IBUISegmentedControl"; rqr-Z1-2h2.segmentTitles[2] = "Second"; ObjectID = "rqr-Z1-2h2"; */
+"rqr-Z1-2h2.segmentTitles[2]" = "Chinese";
