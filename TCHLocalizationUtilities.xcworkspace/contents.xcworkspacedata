@@ -4,4 +4,7 @@
    <FileRef
       location = "group:framework_osx/TCHLocalizationUtilities.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:framework_osx/../examples/LaunchWithLocale/LaunchWithLocale.xcodeproj">
+   </FileRef>
 </Workspace>
