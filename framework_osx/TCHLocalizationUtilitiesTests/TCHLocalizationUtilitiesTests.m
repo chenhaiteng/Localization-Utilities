@@ -23,31 +23,37 @@ static NSString * const TESTSTRING_EN_ONLY = @"Unit Testing EN only";
 static NSString * const STRING_EN_ONLY = @"Unit Testing EN only(En)";
 
 @interface TCHLocalizationUtilitiesTests : XCTestCase
-@property (strong, nonatomic) NSArray* testingPreferredLocales;
-@property (strong, nonatomic) NSString * bundlePath;
+@property (strong, nonatomic, readonly) NSString * mockBundlePath;
 @end
 
 @implementation TCHLocalizationUtilitiesTests
-@synthesize testingPreferredLocales = _testingPreferredLocales;
-@synthesize bundlePath = _bundlePath;
-- (NSArray*)testingLocales
+@dynamic mockBundlePath;
+
+static NSString * _mockBundlePath;
++ (void)setUp
 {
+    //Implement shared fixture.
+    //Ref: http://xunitpatterns.com/Shared%20Fixture.html
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSMutableArray* locales = [NSMutableArray array];
-        for ( NSString* locale in [NSLocale availableLocaleIdentifiers]) {
-            [locales addObject:[locale appleISOString]];
-        };
-        _testingPreferredLocales = [locales copy];
+        _mockBundlePath = [[NSBundle bundleForClass:[TCHLocalizationUtilitiesTests class]] bundlePath];
     });
-    return _testingPreferredLocales;
+}
+
++ (NSString *)mockBundlePath
+{
+    return _mockBundlePath;
+}
+
+- (NSString *)mockBundlePath
+{
+    return [TCHLocalizationUtilitiesTests mockBundlePath];
 }
 
 - (void)setUp
 {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    _bundlePath= [[NSBundle bundleForClass:[TCHLocalizationUtilitiesTests class]] bundlePath];
 }
 
 - (void)tearDown
@@ -58,8 +64,9 @@ static NSString * const STRING_EN_ONLY = @"Unit Testing EN only(En)";
 
 - (void)testFindBundlePath
 {
-    XCTAssertNil([NSBundle findBundlePathForLocale:@"ru" inDirectory:self.bundlePath], @"Bundle path should be nil for [ru].");
-    XCTAssertNotNil([NSBundle findBundlePathForLocale:@"en" inDirectory:self.bundlePath], @"The path for [en] is not exist.");
+    
+    XCTAssertNil([NSBundle findBundlePathForLocale:@"ru" inDirectory:self.mockBundlePath], @"Bundle path should be nil for [ru].");
+    XCTAssertNotNil([NSBundle findBundlePathForLocale:@"en" inDirectory:self.mockBundlePath], @"The path for [en] is not exist.");
 }
 
 - (void)testSetAppLanguage
@@ -80,13 +87,13 @@ static NSString * const STRING_EN_ONLY = @"Unit Testing EN only(En)";
     XCTAssertThrows([NSBundle bundleWithLanguageCode:nil], @"No exception throws while locale is nil.");
     XCTAssertThrows([NSBundle bundleWithLanguageCode:@"en" inDirectory:@"-"], @"No assertion for invalid directory.");
     
-    NSBundle * bundle_en = [NSBundle bundleWithLanguageCode:@"en" inDirectory:self.bundlePath];
+    NSBundle * bundle_en = [NSBundle bundleWithLanguageCode:@"en" inDirectory:self.mockBundlePath];
     XCTAssertNotNil(bundle_en, @"Cannot create localized resource for [en]");
-    NSBundle * bundle_zh_hant = [NSBundle bundleWithLanguageCode:@"zh_Hant" inDirectory:self.bundlePath];
+    NSBundle * bundle_zh_hant = [NSBundle bundleWithLanguageCode:@"zh_Hant" inDirectory:self.mockBundlePath];
     XCTAssertNotNil(bundle_zh_hant, @"Cannot create localized resource for [zh_Hant]");
-    NSBundle * bundle_zh_hans = [NSBundle bundleWithLanguageCode:@"zh_Hans" inDirectory:self.bundlePath];
+    NSBundle * bundle_zh_hans = [NSBundle bundleWithLanguageCode:@"zh_Hans" inDirectory:self.mockBundlePath];
     XCTAssertNotNil(bundle_zh_hans, @"Cannot create localized resource for [zh_Hans]");
-    NSBundle * bundle_zh_hant_hk = [NSBundle bundleWithLanguageCode:@"zh_Hant_HK" inDirectory:self.bundlePath];
+    NSBundle * bundle_zh_hant_hk = [NSBundle bundleWithLanguageCode:@"zh_Hant_HK" inDirectory:self.mockBundlePath];
     XCTAssertNotNil(bundle_zh_hant_hk, @"Cannot create localized resource for [zh_Hant_HK]");
 }
 @end
