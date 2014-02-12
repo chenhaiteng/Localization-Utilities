@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:examples/SwitchLocaleOnTheFly/SwitchLocaleOnTheFly.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:framework_osx/TCHLocalizationUtilities.xcodeproj">
    </FileRef>
    <FileRef
