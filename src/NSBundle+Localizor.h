@@ -12,3 +12,10 @@
 + (NSBundle *)bundleWithLanguageCode:(NSString *)language;
 + (NSBundle *)bundleWithLanguageCode:(NSString *)language inDirectory:(NSString*)path;
 @end
+
+
+#define TCHLocalizedString(key, lang, comment) \
+[[NSBundle bundleWithLanguageCode:(lang)] localizedStringForKey:(key) value:@"" table:nil]
+
+#define TCHLocalizedStringFromTable(key, lang, tbl, comment) \
+[[NSBundle bundleWithLanguageCode:(lang)] localizedStringForKey:(key) value:@"" table:(tbl)]

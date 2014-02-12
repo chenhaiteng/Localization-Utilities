@@ -9,6 +9,7 @@
 #import "OFViewController.h"
 #import "NSBundle+Localizor.h"
 
+
 @interface OFViewController ()
 @property (strong, nonatomic) NSString * langCode;
 @end
@@ -67,7 +68,8 @@
     if(indexPath.row == 0) {
         cell.textLabel.text = NSLocalizedString(@"FirstData", @"");
     } else {
-        cell.textLabel.text = [[NSBundle bundleWithLanguageCode:self.langCode] localizedStringForKey:@"Data" value:nil table:nil];
+        cell.textLabel.text = TCHLocalizedString(@"Data", self.langCode, @"");
+//        cell.textLabel.text = [[NSBundle bundleWithLanguageCode:self.langCode] localizedStringForKey:@"Data" value:nil table:nil];
     }
     return cell;
 }
