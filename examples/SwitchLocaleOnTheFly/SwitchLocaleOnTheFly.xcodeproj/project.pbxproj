@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0608474D18AB649900A0A021 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0608474F18AB649900A0A021 /* Localizable.strings */; };
+		0608475118AB657100A0A021 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0608474F18AB649900A0A021 /* Localizable.strings */; };
+		06608FB918AA232200CF4C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06608FB818AA232200CF4C81 /* Foundation.framework */; };
+		06608FBB18AA232200CF4C81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06608FBA18AA232200CF4C81 /* CoreGraphics.framework */; };
+		06608FBD18AA232200CF4C81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06608FBC18AA232200CF4C81 /* UIKit.framework */; };
+		06608FC318AA232200CF4C81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06608FC118AA232200CF4C81 /* InfoPlist.strings */; };
+		06608FC518AA232200CF4C81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06608FC418AA232200CF4C81 /* main.m */; };
+		06608FC918AA232200CF4C81 /* OFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06608FC818AA232200CF4C81 /* OFAppDelegate.m */; };
+		06608FCB18AA232200CF4C81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06608FCA18AA232200CF4C81 /* Images.xcassets */; };
+		06608FD218AA232200CF4C81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06608FD118AA232200CF4C81 /* XCTest.framework */; };
+		06608FD318AA232200CF4C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06608FB818AA232200CF4C81 /* Foundation.framework */; };
+		06608FD418AA232200CF4C81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06608FBC18AA232200CF4C81 /* UIKit.framework */; };
+		06608FDC18AA232200CF4C81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06608FDA18AA232200CF4C81 /* InfoPlist.strings */; };
+		06608FDE18AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06608FDD18AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.m */; };
+		06608FEA18AA23CB00CF4C81 /* OFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06608FE818AA23CB00CF4C81 /* OFViewController.m */; };
+		06BB04CF18AA272B00CCE406 /* OFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BB04CD18AA272B00CCE406 /* OFViewController.xib */; };
+		06BB04D718AA29EE00CCE406 /* NSBundle+Localizor.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BB04D218AA29EE00CCE406 /* NSBundle+Localizor.m */; };
+		06BB04D818AA29EE00CCE406 /* NSBundle+LanguageCodeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BB04D418AA29EE00CCE406 /* NSBundle+LanguageCodeUtilities.m */; };
+		06BB04D918AA29EE00CCE406 /* NSString+LanguageCodeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BB04D618AA29EE00CCE406 /* NSString+LanguageCodeUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06608FD518AA232200CF4C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06608FAD18AA232200CF4C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06608FB418AA232200CF4C81;
+			remoteInfo = SwitchLocaleOnTheFly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0608474E18AB649900A0A021 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0608475018AB64A000A0A021 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		06608FB518AA232200CF4C81 /* SwitchLocaleOnTheFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchLocaleOnTheFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06608FB818AA232200CF4C81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06608FBA18AA232200CF4C81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06608FBC18AA232200CF4C81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06608FC018AA232200CF4C81 /* SwitchLocaleOnTheFly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchLocaleOnTheFly-Info.plist"; sourceTree = "<group>"; };
+		06608FC218AA232200CF4C81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06608FC418AA232200CF4C81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06608FC618AA232200CF4C81 /* SwitchLocaleOnTheFly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwitchLocaleOnTheFly-Prefix.pch"; sourceTree = "<group>"; };
+		06608FC718AA232200CF4C81 /* OFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OFAppDelegate.h; sourceTree = "<group>"; };
+		06608FC818AA232200CF4C81 /* OFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OFAppDelegate.m; sourceTree = "<group>"; };
+		06608FCA18AA232200CF4C81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06608FD018AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchLocaleOnTheFlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06608FD118AA232200CF4C81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		06608FD918AA232200CF4C81 /* SwitchLocaleOnTheFlyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchLocaleOnTheFlyTests-Info.plist"; sourceTree = "<group>"; };
+		06608FDB18AA232200CF4C81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06608FDD18AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchLocaleOnTheFlyTests.m; sourceTree = "<group>"; };
+		06608FE718AA23CB00CF4C81 /* OFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFViewController.h; sourceTree = "<group>"; };
+		06608FE818AA23CB00CF4C81 /* OFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFViewController.m; sourceTree = "<group>"; };
+		06608FEC18AA254900CF4C81 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		06608FED18AA254900CF4C81 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		06BB04CE18AA272B00CCE406 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OFViewController.xib; sourceTree = "<group>"; };
+		06BB04D118AA29EE00CCE406 /* NSBundle+Localizor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+Localizor.h"; path = "/Users/ChenHai/Documents/Workspace/MyProjects/TCHLocalizationUtilities/framework_osx/TCHLocalizationUtilities/../../src/NSBundle+Localizor.h"; sourceTree = "<absolute>"; };
+		06BB04D218AA29EE00CCE406 /* NSBundle+Localizor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+Localizor.m"; path = "/Users/ChenHai/Documents/Workspace/MyProjects/TCHLocalizationUtilities/framework_osx/TCHLocalizationUtilities/../../src/NSBundle+Localizor.m"; sourceTree = "<absolute>"; };
+		06BB04D318AA29EE00CCE406 /* NSBundle+LanguageCodeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+LanguageCodeUtilities.h"; path = "/Users/ChenHai/Documents/Workspace/MyProjects/TCHLocalizationUtilities/framework_osx/TCHLocalizationUtilities/../../src/NSBundle+LanguageCodeUtilities.h"; sourceTree = "<absolute>"; };
+		06BB04D418AA29EE00CCE406 /* NSBundle+LanguageCodeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+LanguageCodeUtilities.m"; path = "/Users/ChenHai/Documents/Workspace/MyProjects/TCHLocalizationUtilities/framework_osx/TCHLocalizationUtilities/../../src/NSBundle+LanguageCodeUtilities.m"; sourceTree = "<absolute>"; };
+		06BB04D518AA29EE00CCE406 /* NSString+LanguageCodeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+LanguageCodeUtilities.h"; path = "/Users/ChenHai/Documents/Workspace/MyProjects/TCHLocalizationUtilities/framework_osx/TCHLocalizationUtilities/../../src/NSString+LanguageCodeUtilities.h"; sourceTree = "<absolute>"; };
+		06BB04D618AA29EE00CCE406 /* NSString+LanguageCodeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+LanguageCodeUtilities.m"; path = "/Users/ChenHai/Documents/Workspace/MyProjects/TCHLocalizationUtilities/framework_osx/TCHLocalizationUtilities/../../src/NSString+LanguageCodeUtilities.m"; sourceTree = "<absolute>"; };
+		06BB04DA18AA2BEF00CCE406 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/OFViewController.xib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06608FB218AA232200CF4C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06608FBB18AA232200CF4C81 /* CoreGraphics.framework in Frameworks */,
+				06608FBD18AA232200CF4C81 /* UIKit.framework in Frameworks */,
+				06608FB918AA232200CF4C81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06608FCD18AA232200CF4C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06608FD218AA232200CF4C81 /* XCTest.framework in Frameworks */,
+				06608FD418AA232200CF4C81 /* UIKit.framework in Frameworks */,
+				06608FD318AA232200CF4C81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06608FAC18AA232200CF4C81 = {
+			isa = PBXGroup;
+			children = (
+				06608FBE18AA232200CF4C81 /* SwitchLocaleOnTheFly */,
+				06608FD718AA232200CF4C81 /* SwitchLocaleOnTheFlyTests */,
+				06608FB718AA232200CF4C81 /* Frameworks */,
+				06608FB618AA232200CF4C81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06608FB618AA232200CF4C81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06608FB518AA232200CF4C81 /* SwitchLocaleOnTheFly.app */,
+				06608FD018AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06608FB718AA232200CF4C81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06608FB818AA232200CF4C81 /* Foundation.framework */,
+				06608FBA18AA232200CF4C81 /* CoreGraphics.framework */,
+				06608FBC18AA232200CF4C81 /* UIKit.framework */,
+				06608FD118AA232200CF4C81 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06608FBE18AA232200CF4C81 /* SwitchLocaleOnTheFly */ = {
+			isa = PBXGroup;
+			children = (
+				06BB04D118AA29EE00CCE406 /* NSBundle+Localizor.h */,
+				06BB04D218AA29EE00CCE406 /* NSBundle+Localizor.m */,
+				06BB04D318AA29EE00CCE406 /* NSBundle+LanguageCodeUtilities.h */,
+				06BB04D418AA29EE00CCE406 /* NSBundle+LanguageCodeUtilities.m */,
+				06BB04D518AA29EE00CCE406 /* NSString+LanguageCodeUtilities.h */,
+				06BB04D618AA29EE00CCE406 /* NSString+LanguageCodeUtilities.m */,
+				06608FC718AA232200CF4C81 /* OFAppDelegate.h */,
+				06608FC818AA232200CF4C81 /* OFAppDelegate.m */,
+				06608FCA18AA232200CF4C81 /* Images.xcassets */,
+				06608FBF18AA232200CF4C81 /* Supporting Files */,
+				06608FE718AA23CB00CF4C81 /* OFViewController.h */,
+				06608FE818AA23CB00CF4C81 /* OFViewController.m */,
+				06BB04CD18AA272B00CCE406 /* OFViewController.xib */,
+			);
+			path = SwitchLocaleOnTheFly;
+			sourceTree = "<group>";
+		};
+		06608FBF18AA232200CF4C81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06608FC018AA232200CF4C81 /* SwitchLocaleOnTheFly-Info.plist */,
+				06608FC118AA232200CF4C81 /* InfoPlist.strings */,
+				06608FC418AA232200CF4C81 /* main.m */,
+				06608FC618AA232200CF4C81 /* SwitchLocaleOnTheFly-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06608FD718AA232200CF4C81 /* SwitchLocaleOnTheFlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				06608FDD18AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.m */,
+				06608FD818AA232200CF4C81 /* Supporting Files */,
+			);
+			path = SwitchLocaleOnTheFlyTests;
+			sourceTree = "<group>";
+		};
+		06608FD818AA232200CF4C81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06608FD918AA232200CF4C81 /* SwitchLocaleOnTheFlyTests-Info.plist */,
+				06608FDA18AA232200CF4C81 /* InfoPlist.strings */,
+				0608474F18AB649900A0A021 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06608FB418AA232200CF4C81 /* SwitchLocaleOnTheFly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06608FE118AA232200CF4C81 /* Build configuration list for PBXNativeTarget "SwitchLocaleOnTheFly" */;
+			buildPhases = (
+				06608FB118AA232200CF4C81 /* Sources */,
+				06608FB218AA232200CF4C81 /* Frameworks */,
+				06608FB318AA232200CF4C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchLocaleOnTheFly;
+			productName = SwitchLocaleOnTheFly;
+			productReference = 06608FB518AA232200CF4C81 /* SwitchLocaleOnTheFly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06608FCF18AA232200CF4C81 /* SwitchLocaleOnTheFlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06608FE418AA232200CF4C81 /* Build configuration list for PBXNativeTarget "SwitchLocaleOnTheFlyTests" */;
+			buildPhases = (
+				06608FCC18AA232200CF4C81 /* Sources */,
+				06608FCD18AA232200CF4C81 /* Frameworks */,
+				06608FCE18AA232200CF4C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06608FD618AA232200CF4C81 /* PBXTargetDependency */,
+			);
+			name = SwitchLocaleOnTheFlyTests;
+			productName = SwitchLocaleOnTheFlyTests;
+			productReference = 06608FD018AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06608FAD18AA232200CF4C81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OF;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Chen-Hai Teng";
+				TargetAttributes = {
+					06608FCF18AA232200CF4C81 = {
+						TestTargetID = 06608FB418AA232200CF4C81;
+					};
+				};
+			};
+			buildConfigurationList = 06608FB018AA232200CF4C81 /* Build configuration list for PBXProject "SwitchLocaleOnTheFly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hant",
+			);
+			mainGroup = 06608FAC18AA232200CF4C81;
+			productRefGroup = 06608FB618AA232200CF4C81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06608FB418AA232200CF4C81 /* SwitchLocaleOnTheFly */,
+				06608FCF18AA232200CF4C81 /* SwitchLocaleOnTheFlyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06608FB318AA232200CF4C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0608475118AB657100A0A021 /* Localizable.strings in Resources */,
+				06608FC318AA232200CF4C81 /* InfoPlist.strings in Resources */,
+				06BB04CF18AA272B00CCE406 /* OFViewController.xib in Resources */,
+				06608FCB18AA232200CF4C81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06608FCE18AA232200CF4C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06608FDC18AA232200CF4C81 /* InfoPlist.strings in Resources */,
+				0608474D18AB649900A0A021 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06608FB118AA232200CF4C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BB04D718AA29EE00CCE406 /* NSBundle+Localizor.m in Sources */,
+				06608FC518AA232200CF4C81 /* main.m in Sources */,
+				06BB04D918AA29EE00CCE406 /* NSString+LanguageCodeUtilities.m in Sources */,
+				06608FC918AA232200CF4C81 /* OFAppDelegate.m in Sources */,
+				06608FEA18AA23CB00CF4C81 /* OFViewController.m in Sources */,
+				06BB04D818AA29EE00CCE406 /* NSBundle+LanguageCodeUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06608FCC18AA232200CF4C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06608FDE18AA232200CF4C81 /* SwitchLocaleOnTheFlyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06608FD618AA232200CF4C81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06608FB418AA232200CF4C81 /* SwitchLocaleOnTheFly */;
+			targetProxy = 06608FD518AA232200CF4C81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0608474F18AB649900A0A021 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0608474E18AB649900A0A021 /* en */,
+				0608475018AB64A000A0A021 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		06608FC118AA232200CF4C81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06608FC218AA232200CF4C81 /* en */,
+				06608FEC18AA254900CF4C81 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06608FDA18AA232200CF4C81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06608FDB18AA232200CF4C81 /* en */,
+				06608FED18AA254900CF4C81 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06BB04CD18AA272B00CCE406 /* OFViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BB04CE18AA272B00CCE406 /* en */,
+				06BB04DA18AA2BEF00CCE406 /* zh-Hant */,
+			);
+			name = OFViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06608FDF18AA232200CF4C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06608FE018AA232200CF4C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06608FE218AA232200CF4C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchLocaleOnTheFly/SwitchLocaleOnTheFly-Prefix.pch";
+				INFOPLIST_FILE = "SwitchLocaleOnTheFly/SwitchLocaleOnTheFly-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06608FE318AA232200CF4C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchLocaleOnTheFly/SwitchLocaleOnTheFly-Prefix.pch";
+				INFOPLIST_FILE = "SwitchLocaleOnTheFly/SwitchLocaleOnTheFly-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		06608FE518AA232200CF4C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwitchLocaleOnTheFly.app/SwitchLocaleOnTheFly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchLocaleOnTheFly/SwitchLocaleOnTheFly-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SwitchLocaleOnTheFlyTests/SwitchLocaleOnTheFlyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		06608FE618AA232200CF4C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwitchLocaleOnTheFly.app/SwitchLocaleOnTheFly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchLocaleOnTheFly/SwitchLocaleOnTheFly-Prefix.pch";
+				INFOPLIST_FILE = "SwitchLocaleOnTheFlyTests/SwitchLocaleOnTheFlyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06608FB018AA232200CF4C81 /* Build configuration list for PBXProject "SwitchLocaleOnTheFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06608FDF18AA232200CF4C81 /* Debug */,
+				06608FE018AA232200CF4C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06608FE118AA232200CF4C81 /* Build configuration list for PBXNativeTarget "SwitchLocaleOnTheFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06608FE218AA232200CF4C81 /* Debug */,
+				06608FE318AA232200CF4C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06608FE418AA232200CF4C81 /* Build configuration list for PBXNativeTarget "SwitchLocaleOnTheFlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06608FE518AA232200CF4C81 /* Debug */,
+				06608FE618AA232200CF4C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06608FAD18AA232200CF4C81 /* Project object */;
+}
